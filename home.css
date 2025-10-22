@@ -1,0 +1,62 @@
+:root {
+  --base200: #e4e4e7;
+  --base700: #0f0f0f;
+  --primary-red: #e50000;
+  --light-red: #f59999;
+  --white: #fff;
+  --black: #000000;
+  --base300: #999999;
+}
+
+body {
+    background-image: linear-gradient(
+        135deg,
+        rgba(15,15,15, 1) 0%,
+        rgba(15,15,15, 1) 50%,
+        rgba(229,0,0, 1) 100%
+    );
+    padding: 48px;
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    width: 75%;
+    margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.logo img {
+  height: 64px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 36px;
+    height: 64px;
+    border-radius: 100px;
+
+    /* Effet glassmorphism */
+  background: rgba(153, 153, 153, 0.05);
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(24px) saturate(120%);
+
+  /* Bordures et ombres */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 0 rgba(0, 0, 0, 0.05);
+
+  /* Transition */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
