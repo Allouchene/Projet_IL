@@ -1,16 +1,15 @@
-:root{
-  --base200: #E4E4E7;
-  --base700: #0F0F0F;
-  --primary-red: #E50000;
-  --light-red: #F59999;
+:root {
+  --base200: #e4e4e7;
+  --base700: #0f0f0f;
+  --primary-red: #e50000;
+  --light-red: #f59999;
   --white: #fff;
   --black: #000000;
   --base300: #999999;
 }
 
 body {
-  background: url("images/background-5.png") center no-repeat,
-    var(--black);
+  background: url("images/background-5.png") center no-repeat, var(--black);
   background-size: contain;
   background-attachment: fixed;
   height: 80vh;
@@ -27,7 +26,7 @@ header {
   align-items: center;
   margin-top: 0px;
   height: 120px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .logo img {
@@ -50,9 +49,9 @@ button {
   font-family: "inter";
   cursor: pointer;
   overflow: hidden;
-  
+
   /* Effet glassmorphism */
-   background: linear-gradient(
+  background: linear-gradient(
     135deg,
     rgba(228, 228, 231, 0.2) 0%,
     rgba(228, 228, 231, 0) 50%,
@@ -60,19 +59,19 @@ button {
   );
   backdrop-filter: blur(20px) saturate(120%);
   -webkit-backdrop-filter: blur(20px) saturate(120%);
-  
+
   /* Bordure subtile */
   border: 2px solid rgba(228, 228, 231, 0.2);
- 
+
   /* Texte */
   color: var(--base200);
- 
+
   /* Transition fluide */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -92,8 +91,7 @@ button:hover {
   background: rgba(228, 228, 231, 0.15);
   border-color: rgba(228, 228, 231, 0.3);
   transform: translateY(-2px);
-  box-shadow: 
-    0 12px 40px 0 rgba(31, 38, 135, 0.25),
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
 }
 
@@ -104,12 +102,11 @@ button:hover::before {
 button:active {
   transform: translateY(0);
   background: rgba(228, 228, 231, 0.12);
-  box-shadow: 
-    0 4px 16px 0 rgba(31, 38, 135, 0.2),
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.2),
     inset 0 1px 0 0 rgba(228, 228, 231, 0.3);
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +123,7 @@ h1 {
   max-width: 1000px;
 }
 
-p{
+p {
   font-family: "inter";
   font-size: 18px;
   font-weight: 400;
@@ -134,7 +131,6 @@ p{
   text-align: center;
   margin: 12px 0px 64px;
 }
-
 
 .liquid-glass-card {
   /* Structure */
@@ -145,19 +141,17 @@ p{
   overflow: hidden;
   position: relative;
 
-  
   /* Effet glassmorphism */
   background: rgba(153, 153, 153, 0.05);
   backdrop-filter: blur(18px) saturate(120%);
   -webkit-backdrop-filter: blur(24px) saturate(120%);
-  
+
   /* Bordures et ombres */
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 
-    0 8px 32px 0 rgba(0, 0, 0, 0.12),
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.15),
     inset 0 -1px 0 0 rgba(0, 0, 0, 0.05);
-  
+
   /* Transition */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -172,14 +166,14 @@ form {
   margin: 0px;
 }
 
-.form-title{
+.form-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0px 64px 24px;
 }
 
-.form-title a{
+.form-title a {
   font-size: 18px;
   font-family: "inter";
   font-weight: 600;
@@ -188,17 +182,17 @@ form {
   margin: 0px;
 }
 
-.form-title a.active{
+.form-title a.active {
   color: var(--base200);
 }
 
-.form-title .separator{
-  display:inline-block;
-  width:2px;
-  height:48px;
-  background:var(--base300);
-  margin:0px;
-  vertical-align:middle;
+.form-title .separator {
+  display: inline-block;
+  width: 2px;
+  height: 48px;
+  background: var(--base300);
+  margin: 0px;
+  vertical-align: middle;
 }
 
 input[type="text"] {
@@ -221,13 +215,13 @@ input[type="text"] {
 }
 
 input[type="checkbox"] {
-  appearance: none;        /* Supprime le style natif */
+  appearance: none; /* Supprime le style natif */
   -webkit-appearance: none; /* Pour Safari */
   width: 24px;
   height: 24px;
-  border-radius: 100px;    /* Cercle parfait */
+  border-radius: 100px; /* Cercle parfait */
   border: 1px solid var(--base300); /* Couleur de bordure */
-  background: none;        /* Pas de fond */
+  background: none; /* Pas de fond */
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
@@ -236,14 +230,14 @@ input[type="checkbox"] {
 
 /*Style quand coché */
 input[type="checkbox"]:checked::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: 5px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: var(--base300); 
+  background-color: var(--base300);
 }
 
 .legal-condition a {
@@ -256,7 +250,6 @@ input[type="checkbox"]:checked::before {
   text-decoration: underline;
   margin: 0px;
 }
-
 
 .primary-button {
   height: 64px;
@@ -283,24 +276,21 @@ input[type="checkbox"]:checked::before {
   -webkit-backdrop-filter: blur(20px) saturate(180%);
 
   /* Bordure subtile */
-  border: 2px solid rgba(229,0,0,0.2);
-  
+  border: 2px solid rgba(229, 0, 0, 0.2);
+
   /* Texte */
   color: var(--base200);
-
 }
-
 
 .primary-button:hover {
   background: rgba(229, 0, 0, 0.15);
-  border-color: rgba(229,0,0,0.32);
+  border-color: rgba(229, 0, 0, 0.32);
   transform: translateY(-2px);
-  box-shadow: 
-    0 12px 40px 0 rgba(31, 38, 135, 0.25),
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25),
     inset 0 1px 0 0 rgba(229, 0, 0, 0.4);
 }
 
-footer{
+footer {
   margin-top: 50px;
   margin-bottom: 40px;
   text-align: center;
