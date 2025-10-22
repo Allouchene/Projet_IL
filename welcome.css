@@ -1,0 +1,9 @@
+body {
+  background: url("images/background-5.png") center no-repeat,
+    linear-gradient(to bottom, #0f0f0f, #000000);
+  background-size: contain;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}

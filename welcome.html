@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="welcome.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+      <div class="right-nav">
+        <button>Créer un salon</button>
+        <button>Rejoindre</button>
+      </div>
+    </header>
+    <main>
+      <h1>Regardez vos vidéos ensemble, en temps réel.</h1>
+      <p>
+        Créez un salon privé et invitez vos amis à regarder, discuter et
+        partager vos vidéos préférées.
+      </p>
+      <div class="welcome-form">
+        <form action="POST">
+          <div class="form-title">
+            <a href="#">Créer un Salon</a>
+            <a href="#">Rejoindre Salon</a>
+          </div>
+          <input type="text" name="code-salon" hint="Entrez le code du salon" />
+          <input
+            type="text"
+            name="nom-user"
+            hint="Entrez un nom d'utilisateur"
+          />
+          <div class="legal-condition">
+            <input type="checkbox" />
+            <label for=""> Acceptez les conditions générales</label>
+          </div>
+          <button>Rejoindre le salon</button>
+        </form>
+      </div>
+    </main>
+    <footer>© 2025 Projet IL - Groupe M - Version 1.0</footer>
+  </body>
+</html>
