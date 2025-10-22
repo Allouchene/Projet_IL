@@ -30,19 +30,20 @@
         <form action="POST">
           <div class="form-title">
             <a href="#">Créer un Salon</a>
-            <a href="#">Rejoindre Salon</a>
+            <span class="separator" aria-hidden="true"></span>
+            <a href="#" class="active">Rejoindre Salon</a>
           </div>
-          <input type="text" name="code-salon" hint="Entrez le code du salon" />
+          <input type="text" name="code-salon" placeholder="Entrez le code du salon" />
           <input
             type="text"
             name="nom-user"
-            hint="Entrez un nom d'utilisateur"
+            placeholder="Entrez un nom d'utilisateur"
           />
           <div class="legal-condition">
             <input type="checkbox" />
-            <label for=""> Acceptez les conditions générales</label>
+            <a href=""> Acceptez les conditions générales</a>
           </div>
-          <button>Rejoindre le salon</button>
+          <button class="primary-button">Rejoindre le salon</button>
         </form>
       </div>
     </main>
