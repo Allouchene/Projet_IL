@@ -212,5 +212,5 @@ p{
     rgba(168, 85, 247, 0.15) 100%
   );
   backdrop-filter: blur(24px) saturate(180%);
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  border: 1px solid rgba(139, 92, 246, 0.2);
 }
