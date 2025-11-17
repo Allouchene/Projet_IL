@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,12 +15,12 @@
   <body>
     <header>
       <div class="logo">
-        <img src="images/logo.png" alt="logo" />
+        <img src="images/logo.png" alt="Logo Together Play" />
       </div>
-      <div class="right-nav">
-        <button>Créer un salon</button>
-        <button>Rejoindre</button>
-      </div>
+      <nav class="right-nav" aria-label="Navigation principale">
+        <button type="button">Créer un salon</button>
+        <button type="button">Rejoindre</button>
+      </nav>
     </header>
     <main>
       <h1>Regardez vos vidéos ensemble, en temps réel.</h1>
@@ -28,30 +28,45 @@
         Créez un salon privé et invitez vos amis à regarder, discuter et
         partager vos vidéos préférées.
       </p>
-      <div class="liquid-glass-card">
-        <form action="POST">
+      <section class="liquid-glass-card" aria-label="Formulaire de salon">
+        <form action="#" method="post" novalidate>
           <div class="form-title">
             <a href="#">Créer un Salon</a>
             <span class="separator" aria-hidden="true"></span>
-            <a href="#" class="active">Rejoindre Salon</a>
+            <a href="#" class="active" aria-current="page">Rejoindre Salon</a>
           </div>
+          <label class="sr-only" for="code-salon">Code du salon</label>
           <input
+            id="code-salon"
             type="text"
             name="code-salon"
             placeholder="Entrez le code du salon"
+            autocomplete="one-time-code"
+            required
           />
+          <label class="sr-only" for="nom-user">Nom d'utilisateur</label>
           <input
+            id="nom-user"
             type="text"
             name="nom-user"
             placeholder="Entrez un nom d'utilisateur"
+            autocomplete="name"
+            required
           />
           <div class="legal-condition">
-            <input type="checkbox" />
-            <a href=""> Acceptez les conditions générales</a>
+            <input id="terms" type="checkbox" required />
+            <label for="terms">
+              J'accepte les
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >conditions générales</a
+              >
+            </label>
           </div>
-          <button class="primary-button">Rejoindre le salon</button>
+          <button class="primary-button" type="submit">
+            Rejoindre le salon
+          </button>
         </form>
-      </div>
+      </section>
     </main>
     <footer>© 2025 Projet IL - Groupe M - Version 1.0</footer>
   </body>
