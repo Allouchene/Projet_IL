@@ -1,134 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="fr">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
-        rel="stylesheet" />
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=search" />
-   <title>Together Play - Home</title>
-</head>
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Together Play - Accueil</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+          <img src="images/logo.png" alt="Logo Together Play" />
+      </div>
+      <div class="search-container">
+        <input
+          type="search"
+          class="search-bar"
+          placeholder="Rechercher"
+          aria-label="Rechercher"
+        />
+        <span class="material-symbols-outlined search-icon">search</span>
+      </div>
+      <nav class="header-actions" aria-label="Actions du header">
+        <button type="button" class="copy-link-btn">Copier le lien</button>
+        <button
+          type="button"
+          class="settings-btn"
+          aria-label="Paramètres"
+        >
+          <span class="material-symbols-outlined">settings</span>
+        </button>
+      </nav>
+    </header>
 
-<body>
-
-    <main>
-        <header>
-            <div class="logo">
-                <img src="images/logo.png" alt="logo" />
+    <div class="layout-container">
+      <main class="main-content">
+        <section class="video-player-section" aria-label="Lecteur vidéo">
+          <div class="video-container">
+            <div class="video-placeholder">
+              <img
+                src="images/youtube.jpg"
+                alt="Vidéo en cours de lecture"
+                class="video-thumbnail"
+              />
             </div>
-            <div class="search-bar">
-                <p>Rechercher</p>
-                <span class="material-symbols-outlined">
-                    search
-                </span>
+            <div class="video-controls" aria-label="Contrôles vidéo">
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+              <div class="controls-row">
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Lecture/Pause"
+                >
+                  <span class="material-symbols-outlined">play_arrow</span>
+                </button>
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Reculer"
+                >
+                  <span class="material-symbols-outlined">replay_10</span>
+                </button>
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Avancer"
+                >
+                  <span class="material-symbols-outlined">forward_10</span>
+                </button>
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Volume"
+                >
+                  <span class="material-symbols-outlined">volume_up</span>
+                </button>
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Sous-titres"
+                >
+                  <span class="material-symbols-outlined">closed_caption</span>
+                </button>
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Qualité 4K"
+                >
+                  <span>4K</span>
+                </button>
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Paramètres vidéo"
+                >
+                  <span class="material-symbols-outlined">settings</span>
+                </button>
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Chat"
+                >
+                  <span class="material-symbols-outlined">chat_bubble</span>
+                </button>
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Notes"
+                >
+                  <span class="material-symbols-outlined">description</span>
+                </button>
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Image dans l'image"
+                >
+                  <span class="material-symbols-outlined">picture_in_picture</span>
+                </button>
+                <button
+                  type="button"
+                  class="control-btn"
+                  aria-label="Plein écran"
+                >
+                  <span class="material-symbols-outlined">fullscreen</span>
+                </button>
+              </div>
             </div>
-            <div class="right-nav">
-                <button>Copier le lien</button>
-                <link class="settings-icon" rel="stylesheet"
-                    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings" />
-            </div>
-        </header>
-        <section class="video-card">
-            <img src="images/youtube.jpg" alt="video thumbnail" />
+          </div>
         </section>
-        <section class="suggestions">
-            <p>suggestions</p>
-            <div class="suggestions-list">
-                <div class="suggestion-item">
-                    <img src="images/youtube.jpg" alt="suggestion 1" />
-                    <div class="info">
-                        <p>Les informations de la video</p>
-                        <link class="add-icon" rel="stylesheet"
-                            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=add" />
-                    </div>
-                </div>
-                <div class="suggestion-item">
-                    <img src="images/youtube.jpg" alt="suggestion 1" />
-                    <div class="info">
-                        <p>Les informations de la video</p>
-                        <link class="add-icon" rel="stylesheet"
-                            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=add" />
-                    </div>
-                </div>
-                <div class="suggestion-item">
-                    <img src="images/youtube.jpg" alt="suggestion 1" />
-                    <div class="info">
-                        <p>Les informations de la video</p>
-                        <link class="add-icon" rel="stylesheet"
-                            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=add" />
-                    </div>
-                </div>
-            </div>
+
+        <section class="suggestions-section" aria-label="Suggestions de vidéos">
+          <h2 class="section-title">Suggestions</h2>
+          <div class="suggestions-grid">
+            <article class="suggestion-card">
+              <div class="suggestion-thumbnail">
+                <img
+                  src="images/youtube.jpg"
+                  alt="Ce milliardaire a tout perdu à cause d'un caprice..."
+                />
+                <button
+                  type="button"
+                  class="add-to-playlist-btn"
+                  aria-label="Ajouter à la playlist"
+                >
+                  <span class="material-symbols-outlined">add</span>
+                </button>
+              </div>
+              <p class="suggestion-title">
+                Ce milliardaire a tout perdu à cause d'un caprice...
+              </p>
+            </article>
+            <article class="suggestion-card">
+              <div class="suggestion-thumbnail">
+                <img
+                  src="images/youtube.jpg"
+                  alt="Ce milliardaire a tout perdu à cause d'un caprice..."
+                />
+                <button
+                  type="button"
+                  class="add-to-playlist-btn"
+                  aria-label="Ajouter à la playlist"
+                >
+                  <span class="material-symbols-outlined">add</span>
+                </button>
+              </div>
+              <p class="suggestion-title">
+                Ce milliardaire a tout perdu à cause d'un caprice...
+              </p>
+            </article>
+            <article class="suggestion-card">
+              <div class="suggestion-thumbnail">
+                <img
+                  src="images/youtube.jpg"
+                  alt="Ce milliardaire a tout perdu à cause d'un caprice..."
+                />
+                <button
+                  type="button"
+                  class="add-to-playlist-btn"
+                  aria-label="Ajouter à la playlist"
+                >
+                  <span class="material-symbols-outlined">add</span>
+                </button>
+              </div>
+              <p class="suggestion-title">
+                Ce milliardaire a tout perdu à cause d'un caprice...
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar" aria-label="Playlist et messages">
+        <section class="playlist-section">
+          <div class="section-header">
+            <span class="material-symbols-outlined section-icon">menu</span>
+            <h2 class="section-title">Ma Playliste</h2>
+          </div>
+          <ul class="playlist-list" role="list">
+            <li class="playlist-item" role="listitem">
+              <img
+                src="images/youtube.jpg"
+                alt="100 Enfants vs l'Homme le plus..."
+                class="playlist-thumbnail"
+              />
+              <p class="playlist-title">
+                100 Enfants vs l'Homme le plus...
+              </p>
+              <button
+                type="button"
+                class="playlist-menu-btn"
+                aria-label="Options"
+              >
+                <span class="material-symbols-outlined">more_vert</span>
+              </button>
+              <button
+                type="button"
+                class="playlist-remove-btn"
+                aria-label="Retirer de la playlist"
+              >
+                <span class="material-symbols-outlined">close</span>
+              </button>
+            </li>
+            <li class="playlist-item" role="listitem">
+              <img
+                src="images/youtube.jpg"
+                alt="100 Enfants vs l'Homme le plus..."
+                class="playlist-thumbnail"
+              />
+              <p class="playlist-title">
+                100 Enfants vs l'Homme le plus...
+              </p>
+              <button
+                type="button"
+                class="playlist-menu-btn"
+                aria-label="Options"
+              >
+                <span class="material-symbols-outlined">more_vert</span>
+              </button>
+              <button
+                type="button"
+                class="playlist-remove-btn"
+                aria-label="Retirer de la playlist"
+              >
+                <span class="material-symbols-outlined">close</span>
+              </button>
+            </li>
+            <li class="playlist-item" role="listitem">
+              <img
+                src="images/youtube.jpg"
+                alt="100 Enfants vs l'Homme le plus..."
+                class="playlist-thumbnail"
+              />
+              <p class="playlist-title">
+                100 Enfants vs l'Homme le plus...
+              </p>
+              <button
+                type="button"
+                class="playlist-menu-btn"
+                aria-label="Options"
+              >
+                <span class="material-symbols-outlined">more_vert</span>
+              </button>
+              <button
+                type="button"
+                class="playlist-remove-btn"
+                aria-label="Retirer de la playlist"
+              >
+                <span class="material-symbols-outlined">close</span>
+              </button>
+            </li>
+          </ul>
         </section>
 
-
-    </main>
-    <section class="right-section">
-        <div class="card">
-            <div class="title">
-                <link class="playlist-icon" rel="stylesheet"
-                    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=playlist_play" />
-                <p>Playlist</p>
+        <section class="messages-section">
+          <div class="section-header">
+            <span class="material-symbols-outlined section-icon">chat_bubble</span>
+            <h2 class="section-title">Messages</h2>
+          </div>
+          <div class="messages-container">
+            <div class="message-bubble">
+              <div class="message-avatar">
+                <span class="material-symbols-outlined">person</span>
+              </div>
+              <p class="message-text">What's up Guys?</p>
             </div>
-            <div class="card-content">
-                <div class="playlist-item">
-                    <link class="darg-icon" rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=drag_indicator" />
-                    <img src="images/youtube.jpg" alt="miniature-youtube" />
-                    <p>Titre de la vidéo</p>
-                    <link class="close-icon" rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close_small" />
-                </div>
-                <div class="playlist-item">
-                    <link class="darg-icon" rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=drag_indicator" />
-                    <img src="images/youtube.jpg" alt="miniature-youtube" />
-                    <p>Titre de la vidéo</p>
-                    <link class="close-icon" rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close_small" />
-                </div>
-                <div class="playlist-item">
-                    <link class="darg-icon" rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=drag_indicator" />
-                    <img src="images/youtube.jpg" alt="miniature-youtube" />
-                    <p>Titre de la vidéo</p>
-                    <link class="close-icon" rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close_small" />
-                </div>
+            <div class="message-bubble">
+              <div class="message-avatar">
+                <span class="material-symbols-outlined">person</span>
+              </div>
+              <p class="message-text">How was your day?</p>
             </div>
-        </div>
-
-        <div class="chat-box">
-            <div class="title">
-                <link class="chat-icon" rel="stylesheet"
-                    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat_bubble" />
-                <p>Chat</p>
-            </div>
-            <div class="card-content">
-                <div class="message-recieved">
-                    <link class="user-img" rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
-                    <p class="message">Bonjour tout le monde !</p>
-                </div>
-                <div class="message-sent">
-                    <link class="user-img" rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
-                    <p class="message sent">Bonjour tout le monde !</p>
-                </div>
-                <div class="message-input">
-                    <input type="text" placeholder="Écrire un message..." />
-                    <link class="send-icon" rel="stylesheet"
-                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=send" />
-                </div>
-            </div>
-        </div>
-
-    </section>
-</body>
-
+          </div>
+          <form class="message-input-form" aria-label="Envoyer un message">
+            <input
+              type="text"
+              class="message-input"
+              placeholder="Envoyer un message"
+              aria-label="Tapez votre message"
+            />
+            <button
+              type="submit"
+              class="send-btn"
+              aria-label="Envoyer le message"
+            >
+              <span class="material-symbols-outlined">send</span>
+            </button>
+          </form>
+        </section>
+      </aside>
+    </div>
+  </body>
 </html>
