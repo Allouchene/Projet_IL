@@ -180,17 +180,50 @@
                 </div>
                 <div class="section-container">
                     <div class="messages-container">
-                        <div class="message-bubble">
-                            <div class="message-avatar">
-                                <span class="material-symbols-outlined">person</span>
+                        <!-- Message de l'utilisateur (à droite) -->
+                        <div class="message-group message-group-user">
+                            <div class="message-bubble user-message">
+                                <p class="message-text">What's up Guys?</p>
+                                <span class="message-time">14:30</span>
                             </div>
-                            <p class="message-text">What's up Guys?</p>
                         </div>
-                        <div class="message-bubble">
-                            <div class="message-avatar">
+
+                        <!-- Messages des autres (à gauche) -->
+                        <div class="message-group message-group-other">
+                            <div class="message-avatar other-avatar">
                                 <span class="material-symbols-outlined">person</span>
                             </div>
-                            <p class="message-text">How was your day?</p>
+                            <div class="message-bubbles-wrapper">
+                                <div class="message-bubble other-message">
+                                    <p class="message-text">How was your day?</p>
+                                    <span class="message-time">14:32</span>
+                                </div>
+                                <div class="message-bubble other-message">
+                                    <p class="message-text">I had a great time watching the video!</p>
+                                    <span class="message-time">14:33</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message de l'utilisateur (à droite) -->
+                        <div class="message-group message-group-user">
+                            <div class="message-bubble user-message">
+                                <p class="message-text">That's awesome! Let's watch another one together.</p>
+                                <span class="message-time">14:35</span>
+                            </div>
+                        </div>
+
+                        <!-- Message d'un autre utilisateur -->
+                        <div class="message-group message-group-other">
+                            <div class="message-avatar other-avatar">
+                                <span class="material-symbols-outlined">person</span>
+                            </div>
+                            <div class="message-bubbles-wrapper">
+                                <div class="message-bubble other-message">
+                                    <p class="message-text">Perfect! 🎬</p>
+                                    <span class="message-time">14:36</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <form class="message-input-form" aria-label="Envoyer un message">
