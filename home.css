@@ -96,7 +96,7 @@ header {
     filter: drop-shadow(0 0 10px rgba(229, 0, 0, 0.3));
 }
 
-/* Barre de recherche style macOS */
+/* Barre de recherche  */
 .search-container {
     flex: 1;
     max-width: 500px;
@@ -646,6 +646,7 @@ hr {
 }
 
 .message-input {
+    width: 100%;
     flex: 1;
     background: transparent;
     border: none;
