@@ -1,19 +1,22 @@
 import styles from './Header.module.css'
+import Button from "../ui/Button.jsx";
+import logo from '../../../public/images/logo.png'
+import { useWelcomeAction } from "../../context/WelcomeActionContext.jsx";
 
-export default function Header({
-                                   variant = 'light', // "light" for welcome, "primary" for home
-                                   ...props
-                               }
-) {
+
+export default function Header() {
+
+    const {setAction} = useWelcomeAction();
 
     return (
-        <header className={`${styles.header} ${styles[variant]}`}>
+        <header className={`${styles.header}`}>
             <div className="logo">
-                <img src="TogetherPlay/src/assets/images/logo.png" alt="Logo Together Play"/>
+                <img className={`${styles.logo}`} src={logo} alt="Logo Together Play"/>
             </div>
-            <nav className="right-nav" aria-label="Navigation principale">
-                <button type="button">Créer un salon</button>
-                <button type="button">Rejoindre</button>
+
+            <nav className={`${styles.actions}`} aria-label="Navigation principale">
+                <Button onClick={() => setAction("create")} type="button" variant="glass" size="large">Créer un salon</Button>
+                <Button onClick={() => setAction("join")} type="button" variant="glass" size="large">Rejoindre</Button>
             </nav>
         </header>
     )

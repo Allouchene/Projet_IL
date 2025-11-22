@@ -6,6 +6,7 @@ export default function Button({children,
                                ariaLabel,
                                className = "",
                                type = "button",
+                                id,
                                ...props}){
 
 
@@ -20,6 +21,8 @@ export default function Button({children,
             type= {type}
             className={buttonClasses}
             aria-label={ariaLabel}
+            onMouseEnter={() => setAction({id})}
+            {...props}
         >
             {iconName && <span className="material-symbols-outlined">{iconName}</span>}
             {children}

@@ -2,9 +2,12 @@ import Input from "../component/ui/Input.jsx";
 import Checkbox from "../component/ui/Checkbox.jsx";
 import Button from "../component/ui/Button.jsx";
 import styles from "./JoinForm.module.css";
-import {act, useState} from "react";
+import {act, useContext, useState} from "react";
+import {useWelcomeAction} from "../context/WelcomeActionContext.jsx";
 
-export default function JoinForm(props) {
+export default function JoinForm() {
+
+    const {action, setAction} = useWelcomeAction();
 
     const join = {
         text: "Entrez le code du salon",
@@ -17,7 +20,7 @@ export default function JoinForm(props) {
         input: "name-salon"
     }
 
-    const [action, setAction] = useState("join");
+
 
     function handleLinkClick(id) {
         setAction(id);
