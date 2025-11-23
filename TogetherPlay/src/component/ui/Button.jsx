@@ -1,6 +1,6 @@
 import styles from './Button.module.css';
 export default function Button({children,
-                               variant = "glass", // 'glass', 'primary', 'icon', 'ghost'
+                               variant = "glass", // 'glass', 'primary', 'ghost'
                                size = "default", // 'default' pour home, 'large' pour welcome
                                iconName,
                                ariaLabel,

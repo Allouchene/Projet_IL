@@ -65,7 +65,7 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border, rgba(255,255,255,0.1));
-    color: var(--base200, #e4e4e7);
+    color: var(--base300);
 }
 
 .glass:hover {
@@ -91,13 +91,16 @@
 
 /* 3. GHOST (Icônes seules, transparentes) */
 .ghost {
+    aspect-ratio: 1 / 1;
     background: transparent;
-    border: 1px solid transparent;
-    color: var(--base300, #a1a1aa);
+    border: none;
+    color: var(--base300);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
 }
 
 .ghost:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--white, #fff);
-    border-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-red);
+    background: rgba(229, 0, 0, 0.1);;
 }
