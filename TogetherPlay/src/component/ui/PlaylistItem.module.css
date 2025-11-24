@@ -13,6 +13,7 @@
     background: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.1);
     transform: translateX(1px);
+
 }
 
 .thumbnail {
@@ -25,8 +26,9 @@
 .title {
     font-family: "Manrope", sans-serif;
     flex: 1;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--base200);
     margin: 0;
 }
+

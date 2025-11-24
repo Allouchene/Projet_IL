@@ -12,9 +12,9 @@ export default function WelcomePage() {
     return(
         <WelcomeActionProvider >
                 <Header />
-                <main className={`${styles.main}`}>
-                    <h1 className={`${styles.title}`}>Regardez vos vidéos ensemble, en temps réel.</h1>
-                    <p className={`${styles.subtitle}`}>
+                <main className={styles.main}>
+                    <h1 className={styles.title}>Regardez vos vidéos ensemble, en temps réel.</h1>
+                    <p className={styles.subtitle}>
                         Créez un salon privé et invitez vos amis à regarder, discuter et
                         partager vos vidéos préférées.
                     </p>

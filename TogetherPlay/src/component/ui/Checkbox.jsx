@@ -9,8 +9,8 @@ export default function Checkbox({id,
 
     return (
         <div className={`${styles.wrapper} ${className}`}>
-            <input id={id} type={type} required={required} className={`${styles.checkbox}`}/>
-            <label htmlFor={id} className={`${styles.label}`}>
+            <input id={id} type={type} required={required} className={styles.checkbox}/>
+            <label htmlFor={id} className={styles.label}>
                 {children}
             </label>
         </div>

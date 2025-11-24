@@ -29,14 +29,16 @@ export default function JoinForm() {
 
 
     return (
-        <section className={`${styles.card}`} aria-label="Formulaire de salon">
-            <form action="#" method="post" noValidate className={`${styles.form}`}>
-                <div className={`${styles.title}`}>
+        <section className={styles.card} aria-label="Formulaire de salon">
+            <form action="#" method="post" noValidate className={styles.form}>
+                <div className={styles.title}>
                     <button type="button" onClick={()=> handleLinkClick("create")} className={`${styles.action} ${action === "create" ? styles.active : ""}`}>Créer un Salon</button>
-                    <span className={`${styles.separator}`} aria-hidden="true"></span>
+                    <span className={styles.separator} aria-hidden="true"></span>
                     <button type="button" onClick={() => handleLinkClick("join")} className={`${styles.action} ${action === "join" ? styles.active : ""}`} >Rejoindre Salon</button>
                 </div>
-                <label className="sr-only" htmlFor="code-salon">Code du salon</label>
+                <label className="sr-only" htmlFor="code-salon">
+                    {action === "create" ? create.name : join.name}
+                </label>
                 <Input
                     id="code-salon"
                     name= {action === "create" ? create.input : join.input}

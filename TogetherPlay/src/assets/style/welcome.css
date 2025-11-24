@@ -39,7 +39,7 @@ body {
         /* Couche 1 : Dégradé du rouge très sombre vers le noir presque total */
             linear-gradient(to bottom, rgba(26, 5, 5, 0.8), rgba(5, 5, 5, 0.4)),
                 /* Couche 2 : L'image de fond */
-            url("../../../public/images/background.png");
+            url("../images/background.png");
 
     background-position: center top;
     background-repeat: no-repeat;

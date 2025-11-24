@@ -2,17 +2,23 @@ import { useState } from 'react'
 import Button from "./component/ui/Button.jsx";
 import Input from "./component/ui/Input.jsx";
 import JoinForm from "./features/JoinForm.jsx";
-import Header from "./component/layout/Header.jsx";
+import {WelcomeActionProvider} from "./context/WelcomeActionContext.jsx";
 import WelcomePage from "./pages/WelcomePage.jsx";
-import HeaderPrimary from "./component/layout/HeaderPrimary.jsx";
-import Card from "./component/ui/Card.jsx";
+import Playlist from "./features/Playlist.jsx";
 import PlaylistItem from "./component/ui/PlaylistItem.jsx";
+import Header from "./component/layout/Header.jsx";
+import {HomePlaylistProvider} from "./context/HomePlaylistContext.jsx";
 
 function App() {
   return (
-    <>
-        <PlaylistItem />
-    </>
+
+        <>
+            <HomePlaylistProvider >
+                <Playlist />
+            </HomePlaylistProvider>
+        </>
+
+
   )
 }
 

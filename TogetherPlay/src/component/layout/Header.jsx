@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
 import Button from "../ui/Button.jsx";
-import logo from '../../../public/images/logo.png'
+import logo from "../../assets/images/logo.png"
 import { useWelcomeAction } from "../../context/WelcomeActionContext.jsx";
 
 
@@ -9,9 +9,9 @@ export default function Header() {
     const {setAction} = useWelcomeAction();
 
     return (
-        <header className={`${styles.header}`}>
+        <header className={styles.header}>
             <div className="logo">
-                <img className={`${styles.logo}`} src={logo} alt="Logo Together Play"/>
+                <img className={styles.logo} src={logo} alt="Logo Together Play"/>
             </div>
 
             <nav className={`${styles.actions}`} aria-label="Navigation principale">

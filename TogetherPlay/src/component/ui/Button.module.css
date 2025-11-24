@@ -100,7 +100,10 @@
     border-radius: 50%;
 }
 
-.ghost:hover {
-    color: var(--primary-red);
+.red:hover {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    color: var(--primary-red) !important;
     background: rgba(229, 0, 0, 0.1);;
 }
