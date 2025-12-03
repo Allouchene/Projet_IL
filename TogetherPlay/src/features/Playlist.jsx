@@ -21,9 +21,9 @@ import {
 
 
 import styles from './Playlist.module.css';
-import Card from "../component/ui/Card.jsx"; // Vérifie tes chemins
+import Card from "../component/ui/Card.jsx";
 import PlaylistItem from "../component/ui/PlaylistItem.jsx";
-import {usePlaylist} from "../context/HomePlaylistContext.jsx"; // Vérifie tes chemins
+import {usePlaylist} from "../context/HomePlaylistContext.jsx";
 
 /* ------------------------------------------------------------
    LE WRAPPER (Le pont entre DND-Kit et ton UI)
@@ -44,7 +44,7 @@ function SortablePlaylistItem({ item }) {
         transition,
         opacity: isDragging ? 0.5 : 1, // Petit effet visuel quand on traîne
         zIndex: isDragging ? 999 : 'auto',
-        position: 'relative' // Important pour le z-index
+        position: 'relative'
     };
 
     return (

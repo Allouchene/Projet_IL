@@ -8,14 +8,14 @@ import Playlist from "./features/Playlist.jsx";
 import PlaylistItem from "./component/ui/PlaylistItem.jsx";
 import Header from "./component/layout/Header.jsx";
 import {HomePlaylistProvider} from "./context/HomePlaylistContext.jsx";
+import Message from "./component/ui/Message.jsx";
+import Chat from "./features/Chat.jsx";
 
 function App() {
   return (
 
         <>
-            <HomePlaylistProvider >
-                <Playlist />
-            </HomePlaylistProvider>
+            <WelcomePage />
         </>
 
 

@@ -1,0 +1,38 @@
+.messageInputForm {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.sendBtn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--primary-red);
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 0 10px rgba(229, 0, 0, 0.4);
+}
+
+.sendBtn:hover {
+    transform: scale(1.1) rotate(-10deg);
+}
+

@@ -15,8 +15,34 @@ const initialPlaylist = [
     { id: "4", title: "\"Your Dream Body Won't Make You Happy.\" | David Laid on Fitness, Perfection & Obsession", thumbnail: thum4 }
 ];
 
+// Fonctions d’action pour gérer la playlist
+const addItem = (newItem) => {
+    setItems(prev => [...prev, { id: crypto.randomUUID(), ...newItem }]);
+};
+
+const removeItem = (id) => {
+    setItems(prev => prev.filter(item => item.id !== id));
+};
+
+const updateItem = (id, updatedFields) => {
+    setItems(prev => prev.map(item => item.id === id ? { ...item, ...updatedFields } : item));
+};
+
 export function HomePlaylistProvider({children}) {
     const [items, setItems] = useState(initialPlaylist);
+
+    const addItem = (newItem) => {
+        setItems(prev => [...prev, { id: crypto.randomUUID(), ...newItem }]);
+    };
+
+    const removeItem = (id) => {
+        setItems(prev => prev.filter(item => item.id !== id));
+    };
+
+    const updateItem = (id, updatedFields) => {
+        setItems(prev => prev.map(item => item.id === id ? { ...item, ...updatedFields } : item));
+    };
+
 
     return (
         /* CORRECTION ICI : On utilise le .Provider du contexte créé */
